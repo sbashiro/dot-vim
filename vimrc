@@ -96,7 +96,7 @@ syntax enable
 set background=dark
 try
     set termguicolors
-    colorscheme jellybeans
+    colorscheme kalahari
     hi CursorLine term=none cterm=none gui=none
     hi CursorLineNr term=none cterm=none gui=none
 catch
