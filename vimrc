@@ -95,7 +95,9 @@ endtry
 syntax enable
 set background=dark
 try
-    set termguicolors
+    if has('vcon')
+        set termguicolors
+    endif
     colorscheme kalahari
     hi CursorLine term=none cterm=none gui=none
     hi CursorLineNr term=none cterm=none gui=none
