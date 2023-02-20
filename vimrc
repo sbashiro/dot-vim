@@ -34,7 +34,7 @@ set vb
 set t_vb=
 
 " Enable mouse
-set mouse=a
+set mouse=
 set mousemodel=extend
 
 " Special key for more hotkeys
