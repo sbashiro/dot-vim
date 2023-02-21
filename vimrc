@@ -33,9 +33,11 @@ set fileformats=unix,dos,mac
 set vb
 set t_vb=
 
-" Enable mouse
-set mouse=
+" Enable mouse scrolling only
+set mouse=n
 set mousemodel=extend
+nmap <LeftMouse> <nop>
+nmap <RightMouse> <nop>
 
 " Special key for more hotkeys
 let mapleader = ","
