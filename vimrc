@@ -215,3 +215,6 @@ function! ToggleHexMode()
     endif
 endfunction
 nmap <silent> <F8> :call ToggleHexMode()<cr>
+
+" Search for the .tags file starting from the current directory and all the way to the root
+set tags=.tags;/
