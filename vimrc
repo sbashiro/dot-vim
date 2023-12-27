@@ -49,8 +49,9 @@ set whichwrap+=<,>,h,l
 " Spaces instead of tab
 set expandtab
 set smarttab
-set shiftwidth=8
-set tabstop=8
+set shiftwidth=4
+set tabstop=4
+set softtabstop=0
 
 " Indentation and wrap
 set autoindent
@@ -216,5 +217,5 @@ function! ToggleHexMode()
 endfunction
 nmap <silent> <F8> :call ToggleHexMode()<cr>
 
-" Search for the .tags file starting from the current directory and all the way to the root
+" Lookup .tags file starting from current dir up to the root
 set tags=.tags;/
