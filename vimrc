@@ -47,8 +47,8 @@ set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
 
 " Spaces instead of tab
-set expandtab
 set smarttab
+set expandtab
 set shiftwidth=4
 set tabstop=4
 set softtabstop=0
@@ -216,6 +216,9 @@ function! ToggleHexMode()
     endif
 endfunction
 nmap <silent> <F8> :call ToggleHexMode()<cr>
+
+" Treat *.h files as C code
+let g:c_syntax_for_h = 1
 
 " Lookup .tags file starting from current dir up to the root
 set tags=.tags;/
