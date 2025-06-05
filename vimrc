@@ -60,6 +60,9 @@ set textwidth=120
 set linebreak
 set wrap
 
+" Vertical line
+set colorcolumn=80
+
 " Search and match
 set incsearch
 set smartcase
@@ -115,6 +118,7 @@ au FocusGained,BufEnter * checktime
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 " Cursor line highlighting
+set cursorline
 nmap <silent> <F2> :setlocal cursorline!<cr>
 imap <silent> <F2> <Esc>:setlocal cursorline!<cr>gi
 
